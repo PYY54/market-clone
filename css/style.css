@@ -10,7 +10,7 @@ body {
     sans-serif;
 }
 .media-info-msg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -22,7 +22,7 @@ body {
   background-color: red;
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 500px) {
   .media-info-msg {
     opacity: 0;
   }
