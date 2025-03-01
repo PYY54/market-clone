@@ -22,9 +22,24 @@ footer {
   margin: 0 15px 0 15px;
   cursor: pointer;
 }
+
+@keyframes icons-move {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .footer-icons img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30px;
+}
+.footer-icons:hover {
+  animation: 1.5s icons-move infinite;
 }
